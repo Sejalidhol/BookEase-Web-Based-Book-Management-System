@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Book</title>
+<style>
+	body {
+	        font-family: Arial, sans-serif;
+	        background: linear-gradient(to right, #8360c3, #2ebf91); /* Purple to Teal Gradient */
+	        display: flex;
+	        justify-content: center;
+	        align-items: center;
+	        height: 100vh;
+	        margin: 0;
+	    }
+	    .container {
+	        background: white;
+	        padding: 25px;
+	        border-radius: 10px;
+	        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+	        width: 350px;
+	        text-align: center;
+	    }
+		h2 {
+		        color: rgb(0, 128, 64); /* Dark Purple Title */
+		        margin-bottom: 15px;
+		    }
+			input[type="text"] {
+			        width: 90%;
+			        padding: 10px;
+			        margin: 8px 0;
+			        border: 1px solid #ccc;
+			        border-radius: 5px;
+			        outline: none;
+			        font-size: 14px;
+			    }
+			    input[type="text"]:focus {
+			        border-color: #8360c3; /* Purple Border on Focus */
+			        box-shadow: 0px 0px 5px rgba(131, 96, 195, 0.5);
+			    }
+			    input[type="submit"] {
+			        background: #2ebf91; /* Teal Button */
+			        color: white;
+			        border: none;
+			        padding: 12px;
+			        width: 100%;
+			        cursor: pointer;
+			        border-radius: 5px;
+			        font-size: 16px;
+			        transition: 0.3s;
+			    }
+			    input[type="submit"]:hover {
+			        background: #249f7a; /* Darker Teal on Hover */
+			    }
+
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Add Book</h2>
+    <form action="book" method="post">
+        <input type="text" name="Bid" placeholder="Book ID" required><br>
+        <input type="text" name="Bname" placeholder="Book Name" required><br>
+        <input type="text" name="Bauthor" placeholder="Book Author" required><br>
+        <input type="text" name="Bprice" placeholder="Book Price" required><br>
+        <input type="text" name="Bqty" placeholder="Book Quantity" required><br>
+        <input type="submit" value="ADD">
+    </form>
+	<a href="loginsuccess.jsp" >Go Back</a>
+</div>
+
+</body>
+</html>
